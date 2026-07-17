@@ -7,15 +7,15 @@ Membuat API Todo dengan NestJS + MySQL (XAMPP) + TypeORM
 ```
 todo-api/
 ├── src/
-│   ├── main.ts                     # entry point, prefix /api/v1, ValidationPipe global
-│   ├── app.module.ts                # konfigurasi koneksi TypeORM ke MySQL
+│   ├── main.ts                   
+│   ├── app.module.ts                
 │   └── todo/
-│       ├── entities/todo.entity.ts  # Entity Todo
+│       ├── entities/todo.entity.ts  
 │       ├── dto/
-│       │   ├── create-todo.dto.ts   # DTO + validasi class-validator
-│       │   └── update-todo.dto.ts   # DTO update (semua field opsional)
-│       ├── todo.service.ts          # logika CRUD via Repository
-│       ├── todo.controller.ts       # routing endpoint
+│       │   ├── create-todo.dto.ts   
+│       │   └── update-todo.dto.ts   
+│       ├── todo.service.ts          
+│       ├── todo.controller.ts       
 │       └── todo.module.ts
 ├── package.json
 ├── tsconfig.json
